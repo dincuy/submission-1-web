@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    background: white;
+}
+p::selection {
+    background: green;
+}
+
+/* START-NAVIGASI */
+.navigation {
+    display: inline;
+}
+nav, ul {
+    height: 50px;
+    margin: 0 auto;
+}
+nav li,
+nav a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    line-height: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+nav a:hover {
+    font-weight: bold;
+    text-shadow: 4px 5px 4px rgba(175, 175, 175, 1);
+}
+nav {
+    background: #100e17;
+    position: sticky;
+    top: 0;
+    max-width: 1350px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.75);
+}
+#gntTema {
+    position: relative;
+}
+#gntTema button {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    text-transform: uppercase;
+}
+/* END-NAVIGASI */
+
+main {
+    padding-top: 10px;
+    background: white;
+    overflow: auto;
+}
+
+/* START-CONTENT */
+.content {
+    float: left;
+    color: white;
+    background: white;
+    width: 70%;
+    padding-right: 10px;
+}
+.content article {
+    background: #100e17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 60px;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 100vh;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.75);
+}
+#submission-content h1,
+#profile-content h1 {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+#submission-content p,
+#profile-content p {
+    margin: 10px 0;
+}
+#mySosmed {
+    display: flex;
+}
+#mySosmed img {
+    width: 40px;
+    margin: 10px;
+}
+#contact-person {
+    margin-top: 10px;
+    line-height: 1.5em;
+    text-align: left;
+    text-transform: capitalize;
+}
+#contact-person table {
+    border-spacing: 10px 2px;
+}
+/* END-CONTENT */
+
+/* START-ASIDE */
+.profile {
+    color: white;
+    background: white;
+    float: right;
+    width: 30%;
+}
+.profile table {
+    max-width: 500px;
+}
+.profile th {
+    width: 100px;
+}
+.profile>header {
+    background: #100e17;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+    justify-content: center;
+}
+.profile h2,
+.profile figcaption {
+    text-align: center;
+    margin: 20px;
+}
+.profile img {
+    display: block;
+    width: 200px;
+    border: 5px dashed white;
+    margin: 40px auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* END-ASIDE */
+
+/* START-FOOTER */
+footer {
+    background: #100e17;
+    color: white;
+    height: 50px;
+    padding-top: 1em;
+}
+footer p {
+    padding: 0 10px;
+}
+/* END-FOOTER */
+
+@media screen and (max-width: 992px) {
+    /* START-NAVIGASI */
+    .navigation {
+        display: inline;
+        text-align: center;
+    }
+    nav {
+        height: 70px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    #gntTema {
+        text-align: center;
+    }
+    #gntTema button {
+        position: fixed;
+        top: 40px;;
+        text-transform: uppercase;
+    }
+    /* END-NAVIGASI */
+
+    /* START-CONTENT */
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+    .content article {
+        box-shadow: 0px 1px 11px -1px rgba(0, 0, 0, 1);
+        padding: 0 20px;
+        text-align: justify;
+    }
+    /* END-CONTENT */
+
+    /* START-ASIDE */
+    .profile {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* END-ASIDE */
+
+    /* START-FOOTER */
+    footer {
+        text-align: center;
+    }
+    footer p {
+        font-size: 12px;
+        padding: 0;
+    }
+    /* END-FOOTER */
+}
